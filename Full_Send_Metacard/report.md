@@ -36,7 +36,11 @@ According to the documentation in the code the whitelisted minter should not nee
 
 POC: /POC/no_free_mint.sol
 
-### [LOW] Reduced amount of Firends&Family mints
+### [HIGH] Decision of rare NFTs not public
+
+2.5% of the minted NFTs are a rare version of the normal NFT (also more valuable on the market). The decision as to what NFTs get this trait (which should be random) is not defined in the code. So the owner (if malicious) could choose whatever NFTs he wants to be rare.
+
+### [LOW] Reduced amount of Friends&Family mints
 
 Due to the owner minting the first 101 NFTs for himself, instead of 500 NFTs being available to the addresses inside the friendsFamilyMerkleTreee, only 399 are available. After the minting of 399 the MAX_FRIENDS_SUPPLY is reached.
 
