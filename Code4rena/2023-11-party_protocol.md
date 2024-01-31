@@ -5,12 +5,26 @@
 
 **Platform:** Code4rena
 
+# Findings Summary
+
 | Severity      | Count |
 | :---          |  ---: |
 | High          | 0     |
 | Medium        | 1     |
 | Low           | 6     |
 | Non-Critical  | 0     |
+
+# Table of Contents
+
+| ID | Title |
+| :--- | :--- |
+| M-01 | [Users can intentionally freeze funds inside a Crowdfund](#m-01-users-can-intentionally-freeze-funds-inside-a-crowdfund) |
+| L-01 | [Veto Period should also be skipped if there are no hosts](#l-01-veto-period-should-also-be-skipped-if-there-are-no-hosts) |
+| L-02 | [`supportsInterface()` is missing `ERC-1271`](#l-02-supportsinterface-is-missing-erc-1271) |
+| L-03 | [emergency execute can not be enabled again in Party & Crowdfund)](#l-03-emergency-execute-can-not-be-enabled-again-in-party-crowdfund) |
+| L-04 | [`passThresholdBps` can not be set to 0](#l-04-passthresholdbps-can-not-be-set-to-0) |
+| L-05 | [`executionDelay` can not be set to 0](#l-05-executiondelay-can-not-be-set-to-0) |
+| L-06 | [totalVotingPower can be reduced to 0, leading to multiple DOS scenarios](#l-06-totalvotingpower-can-be-reduced-to-0-leading-to-multiple-dos-scenarios) |
 
 # Medium Findings
 

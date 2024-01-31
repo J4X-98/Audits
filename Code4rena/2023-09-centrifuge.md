@@ -5,12 +5,21 @@
 
 **Platform:** Code4rena
 
+# Findings summary
+
 | Severity      | Count |
 | :---          |  ---: |
 | High          | 0 |
 | Medium        | 2  |
 | Low           | 0  |
 | Non-Critical  | 0  |
+
+# Table of Contents
+
+| ID | Title |
+| :--- | :--- |
+| M-01 | [Users can claim more tranche tokens than allowed by CFG](#m-01-users-can-claim-more-tranche-tokens-than-allowed-by-cfg) |
+| M-02 | [Insufficient Restriction checks on the blocklist](#m-02-insufficient-restriction-checks-on-the-blocklist) |
 
 # Medium Findings
 

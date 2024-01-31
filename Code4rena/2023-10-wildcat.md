@@ -4,6 +4,8 @@
 
 **Platform:** Code4rena
 
+# Findings summary
+
 | Severity      | Count |
 | :---          |  ---: |
 | High          | 0     |
@@ -11,6 +13,30 @@
 | Low           | 11    |
 | Non-Critical  | 8     |
 
+# Table of Contents
+
+| ID | Title |
+| :--- | :--- |
+| M-01 | [Rebasing tokens will get frozen in a closed market](#m-01-rebasing-tokens-will-get-frozen-in-a-closed-market) |
+| L-01 | [Sanctioned Lenders can taint markets](#l-01-sanctioned-lenders-can-taint-markets) |
+| L-02 | [Lenders can fronrun removal](#l-02-lenders-can-fronrun-removal) |
+| L-03 | [Lenders can also deposit when not authorized on the controller](#l-03-lenders-can-also-deposit-when-not-authorized-on-the-controller) |
+| L-04 | [No controllers can be deployed if certain tokens are chosen as `feeAsset`](#l-04-no-controllers-can-be-deployed-if-certain-tokens-are-chosen-as-feeasset) |
+| L-05 | [ Rebasing tokens will lead to borrowers needing to pay a lower APR](#l-05-rebasing-tokens-will-lead-to-borrowers-needing-to-pay-a-lower-apr) |
+| L-06 | [ Reserve ratio can be set to 100%](#l-06-reserve-ratio-can-be-set-to-100) |
+| L-07 | [ `scaleFactor` can theoretically overflow](#l-07-scalefactor-can-theoretically-overflow) |
+| L-08 | [ Misleading ERC20 queries `balanceOf()` and `totalSupply()`](#l-08-misleading-erc20-queries-balanceof-and-totalsupply) |
+| L-09 | [Closed markets can't be reopened](#l-09-closed-markets-cant-be-reopened) |
+| L-10 | [Choosable prefix allows borrowers to mimic other borrowers.](#l-10-choosable-prefix-allows-borrowers-to-mimic-other-borrowers) |
+| L-11 | [Interest continues to accrue up to the expiry.](#l-11-interest-continues-to-accrue-up-to-the-expiry) |
+| NC-01 | [ Badly named constant `BIP`](#nc-01-badly-named-constant-bip) |
+| NC-02 | [ Incorrect documentation on capacity resizing](#nc-02-incorrect-documentation-on-capacity-resizing) |
+| NC-03 | [ Incorrect documentation on authentication process](#nc-03-incorrect-documentation-on-authentication-process) |
+| NC-04 | [ Incorrect documentation of `registerControllerFactory()`](#nc-04-incorrect-documentation-of-registercontrollerfactory) |
+| NC-05 | [ Incorrect documentation of `removeControllerFactory()`](#nc-05-incorrect-documentation-of-removecontrollerfactory) |
+| NC-06 | [ Documentation of functions is missing](#nc-06-documentation-of-functions-is-missing) |
+| NC-07 | [ Incorrect comment in `_depositBorrowWithdraw()`](#nc-07-incorrect-comment-in-_depositborrowwithdraw) |
+| NC-08 | [ `getDeployedControllers()` will not return the last index](#nc-08-getdeployedcontrollers-will-not-return-the-last-index) |
 
 # Medium Findings
 

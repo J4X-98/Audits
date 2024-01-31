@@ -4,12 +4,24 @@
 
 **Platform:** Code4rena
 
+# Findings summary
+
 | Severity      | Count |
 | :---          |  ---: |
 | High          | 0     |
 | Medium        | 1     |
 | Low           | 2     |
 | Non-Critical  | 2     |
+
+# Table of Contents
+
+| ID | Title |
+| :--- | :--- |
+| M-01 | [Approvals allow stakers to circumvent the blocklist](#m-01-approvals-allow-stakers-to-circumvent-the-blocklist) |
+| L-01 | [Restricted users can still unstake their funds using unstake](#l-01-restricted-users-can-still-unstake-their-funds-using-unstake) |
+| L-02 | [Users can only be blacklisted or removed from blacklist by the blacklist manager](#l-02-users-can-only-be-blacklisted-or-removed-from-blacklist-by-the-blacklist-manager) |
+| NC-01 | [ Comment missing dash](#nc-01-comment-missing-dash) |
+| NC-02 | [ Incorrect comment on `_orderBitmaps`](#nc-02-incorrect-comment-on-_orderbitmaps) |
 
 
 # Medium Findings
