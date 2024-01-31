@@ -2,14 +2,21 @@
 # Centrifuge
 
 **Date:** 08.09.2023-14.09.2023
+
 **Platform:** Code4rena
+
+| Severity      | Count |
+| :---          |  ---: |
+| High          | 0 |
+| Medium        | 2  |
+| Low           | 0  |
+| Non-Critical  | 0  |
 
 # Medium Findings
 
-https://github.com/code-423n4/2023-09-centrifuge/blob/main/src/InvestmentManager.sol#L580
-
-
 ## [M-01] Users can claim more tranche tokens than allowed by CFG
+
+[InvestmentManager Line 580](https://github.com/code-423n4/2023-09-centrifuge/blob/main/src/InvestmentManager.sol#L580)
 
 ### Impact
 Following a user's submission of a deposit request and depositing their USDC (or equivalent) into the escrow, the CFG chain calculates the tokens the user will receive based on the current exchange rate and updates the `maxMint` and `maxDeposit` variables accordingly. Subsequently, a user can choose to claim portions of the tokens or all at once.
@@ -422,11 +429,7 @@ This approach will ensure that both the minting and redeeming processes work cor
 
 ## [M-02] Insufficient Restriction checks on the blocklist
 
-
-https://github.com/code-423n4/2023-09-centrifuge/blob/main/src/token/RestrictionManager.sol#L28
-
-
-# Vulnerability details
+[RestrictionsManager Line 28](https://github.com/code-423n4/2023-09-centrifuge/blob/main/src/token/RestrictionManager.sol#L28)
 
 ## Impact
 The tranche token incorporates functionalities to comply with ERC1404 requirements. This design aims to ensure that, in the event an address is added to a sanction list, that address is removed as a member (by setting its validity to the current timestamp), and all corresponding tranche tokens become non-transferable, unburnable, and un-mintable.
